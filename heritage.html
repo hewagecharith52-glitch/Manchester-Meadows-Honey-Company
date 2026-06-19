@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Story &amp; Heritage - Manchester Meadows Honey Company</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Geist:wght@100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#393939",
+                        "secondary-fixed-dim": "#fbbc00",
+                        "primary": "#f2ca50",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed": "#241a00",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-tint": "#e9c349",
+                        "surface-dim": "#131313",
+                        "inverse-primary": "#735c00",
+                        "error-container": "#93000a",
+                        "error": "#ffb4ab",
+                        "background": "#131313",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "on-error": "#690005",
+                        "outline-variant": "#4d4635",
+                        "on-secondary-container": "#6d5000",
+                        "surface": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary-fixed": "#ffdfa0",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#484828",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-fixed": "#1d1d03",
+                        "surface-variant": "#353534",
+                        "secondary-container": "#ffbf00",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary-fixed-dim": "#cac99f",
+                        "tertiary-container": "#b6b58c",
+                        "primary-container": "#d4af37",
+                        "on-tertiary-container": "#474727",
+                        "tertiary": "#d2d1a6",
+                        "on-surface": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "outline": "#99907c",
+                        "on-background": "#e5e2e1",
+                        "on-secondary": "#402d00",
+                        "secondary": "#ffe2ab",
+                        "primary-fixed-dim": "#e9c349",
+                        "tertiary-fixed": "#e6e5b9",
+                        "primary-fixed": "#ffe088",
+                        "surface-container": "#201f1f",
+                        "on-tertiary": "#323214",
+                        "on-primary-container": "#554300",
+                        "on-primary": "#3c2f00",
+                        "on-secondary-fixed": "#261a00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "container-max": "1280px",
+                        "stack-unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Geist"],
+                        "label-sm": ["Geist"],
+                        "headline-xl-mobile": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-lg": ["Geist"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "headline-xl": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden antialiased">
+    <!-- Atmospheric Luxury Background Overlay -->
+    <div class="atmospheric-bg fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
+        <!-- Parallax Layer 1: Heavily Blurred Honeycombs -->
+        <div class="bg-layer parallax-slow absolute inset-0 opacity-30">
+            <div
+                class="absolute top-[5%] left-[-15%] w-[800px] h-[800px] bg-honeycomb-pattern bg-cover filter blur-[8px] transform rotate-12">
+            </div>
+            <div
+                class="absolute bottom-[10%] right-[-15%] w-[700px] h-[700px] bg-honeycomb-pattern bg-cover filter blur-[10px] transform -rotate-6">
+            </div>
+        </div>
+
+        <!-- Parallax Layer 2: Countless Particles & Nectar Droplets -->
+        <div class="bg-layer parallax-medium absolute inset-0">
+            <div class="nectar-particles absolute inset-0"></div>
+            <div class="nectar-particles absolute inset-0 filter blur-[1px]"
+                style="animation-delay: -5s; transform: scale(1.5) rotate(180deg);"></div>
+        </div>
+
+        <!-- Parallax Layer 3: Large Ambient Glows -->
+        <div class="bg-layer parallax-fast absolute inset-0 opacity-40">
+            <div
+                class="absolute top-0 left-0 w-[50%] h-[50%] bg-[radial-gradient(circle,_rgba(212,175,55,0.08)_0%,_transparent_70%)]">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-[60%] h-[60%] bg-[radial-gradient(circle,_rgba(212,175,55,0.05)_0%,_transparent_70%)]">
+            </div>
+        </div>
+    </div>
+    <!-- TopNavBar (Shared Component) -->
+    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-[1920px] mx-auto z-50 fixed docked full-width top-0 bg-[#050505]/70 backdrop-blur-[10px] border-b border-[#d4af37]/20 shadow-[0_4px_30px_rgba(212,175,55,0.15)] transition-all duration-300 ease-in-out hover:bg-[#050505]/90"
+        id="main-nav">
+        <div class="flex flex-col">
+            <div class="logo font-headline-md text-2xl text-[#d4af37] font-bold transition-all duration-300 hover:text-[#ffd700]"
+                style="text-shadow: 0 0 15px rgba(212, 175, 55, 0.8), 0 0 30px rgba(212, 175, 55, 0.4);">
+                Manchester Meadows Honey Co.
+            </div>
+            <div class="font-sans text-[10px] tracking-[0.2em] uppercase text-[#e5e2e1] text-right pr-2 font-medium"
+                style="animation: float 4s ease-in-out infinite;">
+                Meadows Honey
+            </div>
+        </div>
+        <div class="hidden md:flex items-center gap-[48px]">
+            <a class="font-sans text-xs uppercase tracking-widest text-[#d4af37]/70 hover:text-[#d4af37] transition-colors duration-300"
+                href="index.html">Home</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-[#d4af37]/70 hover:text-[#d4af37] transition-colors duration-300"
+                href="shop.html">Shop</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-[#d4af37]/70 hover:text-[#d4af37] transition-colors duration-300"
+                href="heritage.html">Heritage</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-[#d4af37]/70 hover:text-[#d4af37] transition-colors duration-300"
+                href="index.html#process">Process</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-[#d4af37]/70 hover:text-[#d4af37] transition-colors duration-300"
+                href="journal.html">Journal</a>
+        </div>
+        <button
+            class="hidden md:block px-8 py-3 bg-[#f2ca50] text-[#131313] font-sans text-xs font-bold tracking-widest uppercase hover:bg-[#ffe088] transition-colors duration-300 rounded-sm"
+            onclick="window.location.href='heritage.html'">
+            Learn More
+        </button>
+        <button id="hamburger-btn"
+            class="md:hidden flex flex-col justify-center items-center w-8 h-8 z-50 focus:outline-none cursor-pointer">
+            <span class="bg-[#d4af37] block w-6 h-[2px] mb-1.5 transition-all duration-300 origin-center"></span>
+            <span class="bg-[#d4af37] block w-6 h-[2px] mb-1.5 transition-all duration-300 origin-center"></span>
+            <span class="bg-[#d4af37] block w-6 h-[2px] transition-all duration-300 origin-center"></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 top-[88px] bg-[#161616] z-40 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-500 ease-in-out md:hidden flex flex-col justify-center items-center space-y-8">
+        <a class="font-headline-md text-2xl text-[#d4af37] tracking-widest uppercase hover:text-[#ffd700] transition-colors"
+            href="index.html">Home</a>
+        <a class="font-headline-md text-2xl text-[#d4af37] tracking-widest uppercase hover:text-[#ffd700] transition-colors"
+            href="shop.html">Shop</a>
+        <a class="font-headline-md text-2xl text-[#d4af37] tracking-widest uppercase hover:text-[#ffd700] transition-colors"
+            href="heritage.html">Heritage</a>
+        <a class="font-headline-md text-2xl text-[#d4af37] tracking-widest uppercase hover:text-[#ffd700] transition-colors"
+            href="index.html#process">Process</a>
+        <a class="font-headline-md text-2xl text-[#d4af37] tracking-widest uppercase hover:text-[#ffd700] transition-colors"
+            href="journal.html">Journal</a>
+    </div>
+    <main class="pt-[140px] pb-[120px] min-h-screen bg-[#050505]">
+        <div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <!-- Text Block -->
+                <div class="flex flex-col justify-center fade-up order-2 lg:order-1">
+                    <span class="font-sans text-[10px] tracking-[0.3em] uppercase text-[#d4af37]/60 mb-6 block">Our
+                        Genesis</span>
+                    <h1
+                        class="font-headline-xl text-[#d4af37] text-5xl md:text-6xl mb-10 leading-tight drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+                        Echoes of a <br /><span class="text-[#e5e2e1]">Golden Future</span>
+                    </h1>
+
+                    <div class="space-y-8 font-body-lg text-[#d0c5af] text-lg leading-relaxed font-light">
+                        <p>
+                            In an era where the natural world hovered on the brink of memory, we envisioned a sanctuary.
+                            The Manchester Meadows Honey Company was not born from industry, but from a profound
+                            devotion to the architects of lifeâ€”the bees.
+                        </p>
+                        <p>
+                            Our journey is one of futuristic stewardship. We merge zero-gravity apiary habitats with
+                            time-honored organic principles, creating environments where ecosystems do not merely
+                            survive, but thrive with unprecedented vibrancy.
+                        </p>
+                        <p>
+                            Every drop of our nectar is a testament to sustainable harvesting. We observe the sacred
+                            balance, taking only the absolute surplus, and ensuring that our methods regenerate the
+                            soil, purify the air, and protect the fragile lineage of the hive. This is not just honey;
+                            it is a promise to tomorrow.
+                        </p>
+                    </div>
+
+                    <div class="mt-16 pt-8 border-t border-[#d4af37]/20 flex items-center gap-6">
+                        <div class="w-12 h-[1px] bg-[#d4af37]"></div>
+                        <span class="font-sans text-xs tracking-widest text-[#d4af37] uppercase">Est. 2017</span>
+                    </div>
+                </div>
+
+                <!-- Image Block -->
+                <div class="relative order-1 lg:order-2 fade-up" style="transition-delay: 200ms;">
+                    <!-- Outer glowing frame -->
+                    <div class="absolute inset-0 bg-[#d4af37] rounded-sm blur-[30px] opacity-10 translate-y-4"></div>
+                    <div
+                        class="relative aspect-[3/4] w-full max-w-[600px] mx-auto overflow-hidden border border-[#d4af37]/20 rounded-sm hover:border-[#d4af37]/50 transition-colors duration-700">
+                        <!-- Image placeholder -->
+                        <img src="heritage_image.png" alt="Futuristic Apiary"
+                            class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 hover:scale-105 transition-all duration-1000">
+                        <!-- Overlay gradient for depth -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-80 pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer (Shared Component) -->
+    <footer
+        class="bg-inverse-surface dark:bg-surface-container-lowest full-width pt-[128px] pb-margin-desktop shadow-none">
+        <div
+            class="grid grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+            <div class="col-span-12 md:col-span-4 mb-12 md:mb-0">
+                <div class="font-headline-lg text-headline-lg text-primary-fixed-dim mb-6">
+                    Manchester Meadows Honey Company
+                </div>
+                <p class="font-body-md text-body-md text-surface-variant/70 mb-8 max-w-xs">
+                    Curators of exquisite artisanal honey, sustainably sourced and meticulously crafted.
+                </p>
+                <div class="font-body-md text-body-md text-surface-variant/70">
+                    Ã‚Â© 2024 Manchester Meadows Honey Company. All rights reserved.
+                </div>
+            </div>
+            <div class="col-span-6 md:col-span-2 md:col-start-7">
+                <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed mb-6">Company</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-body-md text-body-md text-primary-fixed font-bold hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Sustainability</a></li>
+                    <li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-primary-fixed hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Wholesale</a></li>
+                    <li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-primary-fixed hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="col-span-6 md:col-span-2">
+                <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed mb-6">Support</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-primary-fixed hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Shipping</a></li>
+                    <li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-primary-fixed hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-span-12 md:col-span-2">
+                <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed mb-6">Social</h4>
+                <div class="flex gap-4">
+                    <a class="text-surface-variant/70 hover:text-primary-fixed transition-colors" href="#"><span
+                            class="material-symbols-outlined">public</span></a>
+                    <a class="text-surface-variant/70 hover:text-primary-fixed transition-colors" href="#"><span
+                            class="material-symbols-outlined">share</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Intersection Observer for fade-up animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-up');
+            fadeElements.forEach(el => observer.observe(el));
+
+            // Navbar scroll effect
+            const nav = document.getElementById('main-nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('shadow-md');
+                } else {
+                    nav.classList.remove('shadow-md');
+                }
+            });
+
+            // Hamburger Mobile Menu Toggle
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (hamburgerBtn && mobileMenu) {
+                hamburgerBtn.addEventListener('click', () => {
+                    hamburgerBtn.classList.toggle('active');
+                    mobileMenu.classList.toggle('open');
+                });
+
+                // Close menu when a link is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburgerBtn.classList.remove('active');
+                        mobileMenu.classList.remove('open');
+                    });
+                });
+            }
+        });
+    </script>
+    <script>
+        // Atmospheric Parallax Scroll
+        document.addEventListener("DOMContentLoaded", () => {
+            const parallaxSlow = document.querySelectorAll('.parallax-slow');
+            const parallaxMedium = document.querySelectorAll('.parallax-medium');
+            const parallaxFast = document.querySelectorAll('.parallax-fast');
+
+            if (parallaxSlow.length > 0) {
+                let bgTicking = false;
+                window.addEventListener('scroll', () => {
+                    if (!bgTicking) {
+                        window.requestAnimationFrame(() => {
+                            const scrollY = window.scrollY;
+                            parallaxSlow.forEach(el => el.style.transform = `translateY(${scrollY * -0.05}px)`);
+                            parallaxMedium.forEach(el => el.style.transform = `translateY(${scrollY * -0.1}px)`);
+                            parallaxFast.forEach(el => el.style.transform = `translateY(${scrollY * -0.15}px)`);
+                            bgTicking = false;
+                        });
+                        bgTicking = true;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

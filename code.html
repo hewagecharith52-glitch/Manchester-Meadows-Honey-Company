@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Story &amp; Heritage - Manchester Meadows Honey Company</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Geist:wght@100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#393939",
+                        "secondary-fixed-dim": "#fbbc00",
+                        "primary": "#f2ca50",
+                        "inverse-on-surface": "#313030",
+                        "on-primary-fixed": "#241a00",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-tint": "#e9c349",
+                        "surface-dim": "#131313",
+                        "inverse-primary": "#735c00",
+                        "error-container": "#93000a",
+                        "error": "#ffb4ab",
+                        "background": "#131313",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "on-error": "#690005",
+                        "outline-variant": "#4d4635",
+                        "on-secondary-container": "#6d5000",
+                        "surface": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary-fixed": "#ffdfa0",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#484828",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-highest": "#353534",
+                        "on-tertiary-fixed": "#1d1d03",
+                        "surface-variant": "#353534",
+                        "secondary-container": "#ffbf00",
+                        "surface-container-high": "#2a2a2a",
+                        "tertiary-fixed-dim": "#cac99f",
+                        "tertiary-container": "#b6b58c",
+                        "primary-container": "#d4af37",
+                        "on-tertiary-container": "#474727",
+                        "tertiary": "#d2d1a6",
+                        "on-surface": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "outline": "#99907c",
+                        "on-background": "#e5e2e1",
+                        "on-secondary": "#402d00",
+                        "secondary": "#ffe2ab",
+                        "primary-fixed-dim": "#e9c349",
+                        "tertiary-fixed": "#e6e5b9",
+                        "primary-fixed": "#ffe088",
+                        "surface-container": "#201f1f",
+                        "on-tertiary": "#323214",
+                        "on-primary-container": "#554300",
+                        "on-primary": "#3c2f00",
+                        "on-secondary-fixed": "#261a00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "container-max": "1280px",
+                        "stack-unit": "8px",
+                        "margin-desktop": "64px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Geist"],
+                        "label-sm": ["Geist"],
+                        "headline-xl-mobile": ["Bodoni Moda"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-lg": ["Geist"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "headline-xl": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hide scrollbar for clean aesthetic */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+
+        /* Entrance Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Ambient Glow Shadows */
+        .shadow-honey-glow {
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
+        }
+
+        /* Timeline line gradient */
+        .timeline-line {
+            background: linear-gradient(to bottom, transparent, rgba(212, 175, 55, 0.5), transparent);
+        }
+
+        /* Float Animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-4px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden antialiased">
+    <!-- TopNavBar (Shared Component) -->
+    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-[1920px] mx-auto z-50 fixed docked full-width top-0 bg-[#050505]/95 backdrop-blur-md border-b border-[#d4af37]/20 shadow-[0_4px_30px_rgba(212,175,55,0.15)] transition-all duration-300"
+        id="main-nav">
+        <div class="flex flex-col">
+            <div class="font-headline-md text-2xl text-[#d4af37] drop-shadow-[0_0_12px_rgba(212,175,55,0.6)]">
+                Manchester Meadows Honey Company
+            </div>
+            <div class="font-sans text-[9px] tracking-[0.2em] uppercase text-[#d4af37]/60 text-right pr-2"
+                style="animation: float 4s ease-in-out infinite;">
+                Meadows Honey
+            </div>
+        </div>
+        <div class="hidden md:flex items-center gap-[48px]">
+            <a class="font-sans text-xs uppercase tracking-widest text-[#d4af37]/70 hover:text-[#d4af37] transition-colors duration-300"
+                href="#">Shop</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-[#d4af37] relative group" href="#">
+                Heritage
+                <span
+                    class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#d4af37] rounded-full animate-ping opacity-75"></span>
+                <span
+                    class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-1 h-1 bg-[#d4af37] rounded-full shadow-[0_0_8px_#d4af37]"></span>
+            </a>
+            <a class="font-sans text-xs uppercase tracking-widest text-[#d4af37]/70 hover:text-[#d4af37] transition-colors duration-300"
+                href="#">Process</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-[#d4af37]/70 hover:text-[#d4af37] transition-colors duration-300"
+                href="#">Journal</a>
+        </div>
+        <button
+            class="hidden md:block px-8 py-3 bg-[#f2ca50] text-[#131313] font-sans text-xs font-bold tracking-widest uppercase hover:bg-[#ffe088] transition-colors duration-300 rounded-sm">
+            Learn More
+        </button>
+        <button class="md:hidden text-[#d4af37]">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </nav>
+    <main>
+        <!-- Section 1: Hero UI -->
+        <section class="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-60">
+                    <source src="bee.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-b from-surface-dim/40 via-surface-dim/20 to-surface"></div>
+            </div>
+            <div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl fade-up">
+                <h1
+                    class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary-fixed mb-6 drop-shadow-lg">
+                    CRAFTING GOLD SINCE 2017. FROM HIVE TO BOTTLE.
+                </h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    A dedication to artisanal apiculture, where time-honored traditions meet meticulous modern
+                    refinement.
+                </p>
+            </div>
+            <div
+                class="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center opacity-70 animate-pulse">
+                <span
+                    class="font-label-sm text-label-sm tracking-widest text-primary-fixed mb-2 uppercase">Discover</span>
+                <span class="material-symbols-outlined text-primary-fixed">expand_more</span>
+            </div>
+        </section>
+        <!-- Section 2: Vertical Timeline -->
+        <section class="py-[128px] px-margin-mobile md:px-margin-desktop bg-surface relative z-10">
+            <div class="max-w-container-max mx-auto relative">
+                <div class="text-center mb-[96px] fade-up">
+                    <h2 class="font-headline-lg text-headline-lg text-secondary-fixed mb-4">The Process</h2>
+                    <div class="w-16 h-[1px] bg-primary mx-auto"></div>
+                </div>
+                <!-- Timeline Container -->
+                <div class="relative max-w-4xl mx-auto">
+                    <!-- Central Line -->
+                    <div
+                        class="absolute left-[24px] md:left-1/2 top-0 bottom-0 w-[1px] timeline-line md:-translate-x-1/2 z-0 hidden md:block">
+                    </div>
+                    <!-- Step 1 -->
+                    <div class="relative z-10 flex flex-col md:flex-row items-center mb-[96px] fade-up group">
+                        <div
+                            class="md:w-1/2 flex justify-end md:pr-12 w-full order-2 md:order-1 mt-6 md:mt-0 text-left md:text-right">
+                            <div>
+                                <span
+                                    class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-2">Step
+                                    I</span>
+                                <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Hive Management</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">Our master apiarists
+                                    monitor colony health with profound respect for the natural rhythms of the bees. We
+                                    ensure vibrant, thriving ecosystems before considering harvest.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute left-[24px] md:left-1/2 w-3 h-3 bg-primary rounded-full md:-translate-x-1/2 shadow-[0_0_15px_rgba(242,202,80,0.8)] z-20 hidden md:block group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 w-full order-1 md:order-2">
+                            <div
+                                class="bg-surface-container-low p-2 rounded-lg border border-outline-variant/30 relative overflow-hidden group-hover:border-primary/50 transition-colors duration-500">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-tr from-surface-dim to-transparent z-10 opacity-50">
+                                </div>
+                                <img class="w-full h-64 object-cover rounded-sm filter grayscale hover:grayscale-0 transition-all duration-700"
+                                    data-alt="Close up of a wooden beehive frame covered in golden honeycomb and healthy bees, soft cinematic lighting, shallow depth of field highlighting the raw texture of the wax and honey."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHN1Ht3DUTUcVOBzyTwwlXFtvaMDBOQzGw7GRmwHlJ_UcoY4Uc5varFwmR_hGZL0g5AN1xnQ05nANOsgvV2r_ygtdVhxJOLUowA8RmJ-QDS5bJgu4HaVC3GRZJNR6JN9tvnV4oOsDrwWIhrceepyhp7o38qEPEyMHUEfY7BYyD7DPvbeahhvms8_NJkOK3oDyuXWXZKtTLVyqhdIDml145nFDsywDy35junwPHfJ1TMU4e2T8OaBRIT4Is-ieOKX-GFptdvwj03vCo" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="relative z-10 flex flex-col md:flex-row items-center mb-[96px] fade-up group">
+                        <div class="md:w-1/2 md:pr-12 w-full order-1 md:order-1">
+                            <div
+                                class="bg-surface-container-low p-2 rounded-lg border border-outline-variant/30 relative overflow-hidden group-hover:border-primary/50 transition-colors duration-500">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-tr from-surface-dim to-transparent z-10 opacity-50">
+                                </div>
+                                <img alt="Beekeeper carefully lifting a frame dripping with golden honey, sunlight catching the amber liquid, rustic setting, premium aesthetic."
+                                    class="w-full h-64 object-cover rounded-sm filter grayscale hover:grayscale-0 transition-all duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjGmqsM9VyekWbG1cbRb6Ond1_qDT4PRGfWyhuFZ2uhcFTPB14qr55KRa-ae2ZUpyE0-GugUBd0C5gGkLfmKgpf55eYrVE1Fn9gvgJK3RRyy9DfSnyfDwWgAZaH8REIEeo3dyR41rh4gq_ezEVHKO7cctMSPlVnBblPQ4x4SmQjK7L57AdYqAdblMg9buR-kUzFn0YicP7PjOkTOdw9lnrbDGgnnSAlzhLbIfiuLlOOGoojE4F19DD_1-y85wVaRvT11ejNG-YyR61" />
+                            </div>
+                        </div>
+                        <div
+                            class="absolute left-[24px] md:left-1/2 w-3 h-3 bg-primary rounded-full md:-translate-x-1/2 shadow-[0_0_15px_rgba(242,202,80,0.8)] z-20 hidden md:block group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div
+                            class="md:w-1/2 flex justify-start md:pl-12 w-full order-2 md:order-2 mt-6 md:mt-0 text-left">
+                            <div>
+                                <span
+                                    class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-2">Step
+                                    II</span>
+                                <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Ethical Harvesting
+                                </h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">We take only the surplus.
+                                    Harvesting is done entirely by hand, honoring the labor of the hive and ensuring the
+                                    structural integrity of the honeycomb remains intact.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="relative z-10 flex flex-col md:flex-row items-center mb-[96px] fade-up group">
+                        <div
+                            class="md:w-1/2 flex justify-end md:pr-12 w-full order-2 md:order-1 mt-6 md:mt-0 text-left md:text-right">
+                            <div>
+                                <span
+                                    class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-2">Step
+                                    III</span>
+                                <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Cold Filtering</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">Never heated above ambient
+                                    hive temperature. Our gravity-fed cold filtration process preserves vital enzymes,
+                                    pollens, and the complex flavor profile of the raw nectar.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute left-[24px] md:left-1/2 w-3 h-3 bg-primary rounded-full md:-translate-x-1/2 shadow-[0_0_15px_rgba(242,202,80,0.8)] z-20 hidden md:block group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 w-full order-1 md:order-2">
+                            <div
+                                class="bg-surface-container-low p-2 rounded-lg border border-outline-variant/30 relative overflow-hidden group-hover:border-primary/50 transition-colors duration-500">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-tr from-surface-dim to-transparent z-10 opacity-50">
+                                </div>
+                                <img alt="Thick, raw golden honey slowly dripping through a fine stainless steel mesh filter, dramatic dark background, studio lighting emphasizing viscosity."
+                                    class="w-full h-64 object-cover rounded-sm filter grayscale hover:grayscale-0 transition-all duration-700"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC_LcuNaBK96zR1SbGSMyUHKo18GqEoU-wAn3SLvJn7hDs1Fl8Fbost2MiQPWe1HwNhDHUUyDcxH1a_M9jcri7xTqFZ_3d7NP414d5f8hUs_LRfGjzfv_TnHZt5ZevZDZKOBACTBX4642pRs4WjDpfZaD8Ml9Ew6qHWw3a1XNMr03uX7BlB7MxKUxR6Zhodi9UBI70meCpU08W6zDI5XogBxTZxmj65V2kh5pbXYwQ761Susp94lOT9uozGosaiHyv9UKbl85dXuQK" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="relative z-10 flex flex-col md:flex-row items-center fade-up group">
+                        <div class="md:w-1/2 md:pr-12 w-full order-1 md:order-1">
+                            <div
+                                class="bg-surface-container-low p-2 rounded-lg border border-outline-variant/30 relative overflow-hidden group-hover:border-primary/50 transition-colors duration-500">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-tr from-surface-dim to-transparent z-10 opacity-50">
+                                </div>
+                                <img class="w-full h-64 object-cover rounded-sm filter grayscale hover:grayscale-0 transition-all duration-700"
+                                    data-alt="Elegant glass jar of premium honey on a minimalist dark stone surface, subtle warm lighting casting a golden hue, highly polished sophisticated product photography."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCWnJ0hHOJFx5Km7wFzlwMxvUUcpEhbCeg5cmsWRfo_jQnNIdais1f7HDSoqiGF2oyYsmoyMDl7dWMoV6X3mP1kFBHyjNHaRSqaxWb-hTlPlIO4QaBL-uJixU4NBxC_IFxj1issvHKMb6ucGzk_Eai4JppBMCuzAY9Rt3Balmm3QpgH3lZd7OcZ2uO5_lisqjzg3yPz90EG44hfsyxwuD71AjIq-looj7ao7CuYZxMUsc077XVZMkfTjeCcaC7m-s6sp5YSuxvBFRu" />
+                            </div>
+                        </div>
+                        <div
+                            class="absolute left-[24px] md:left-1/2 w-3 h-3 bg-primary rounded-full md:-translate-x-1/2 shadow-[0_0_15px_rgba(242,202,80,0.8)] z-20 hidden md:block group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div
+                            class="md:w-1/2 flex justify-start md:pl-12 w-full order-2 md:order-2 mt-6 md:mt-0 text-left">
+                            <div>
+                                <span
+                                    class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-2">Step
+                                    IV</span>
+                                <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Sustainable Bottling
+                                </h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">Encased in UV-protective
+                                    heavy glass and sealed with natural cork. Every batch is numbered, a testament to
+                                    its unique vintage and origin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3: Sustainability Mission -->
+        <section
+            class="py-[128px] px-margin-mobile md:px-margin-desktop bg-inverse-surface dark:bg-surface-container-lowest text-inverse-on-surface dark:text-on-surface relative z-10">
+            <div class="max-w-container-max mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+                    <div class="md:col-span-5 fade-up">
+                        <span
+                            class="font-label-sm text-label-sm text-inverse-primary dark:text-primary uppercase tracking-widest block mb-4">Our
+                            Commitment</span>
+                        <h2 class="font-headline-lg text-headline-lg mb-6">Beyond the Harvest</h2>
+                        <p class="font-body-md text-body-md text-outline dark:text-on-surface-variant mb-8">
+                            True luxury acknowledges its source. Our dedication extends beyond creating exceptional
+                            honey to active stewardship of the environments that sustain our bees. We invest in
+                            regenerative agriculture and habitat restoration.
+                        </p>
+                        <div class="grid grid-cols-2 gap-8 mb-8">
+                            <div class="border-l border-inverse-primary/30 dark:border-primary/30 pl-4">
+                                <div class="font-headline-md text-headline-md text-inverse-primary dark:text-primary">
+                                    100k+</div>
+                                <div
+                                    class="font-label-sm text-label-sm text-outline dark:text-on-surface-variant uppercase tracking-widest mt-1">
+                                    Bees Protected</div>
+                            </div>
+                            <div class="border-l border-inverse-primary/30 dark:border-primary/30 pl-4">
+                                <div class="font-headline-md text-headline-md text-inverse-primary dark:text-primary">
+                                    250+</div>
+                                <div
+                                    class="font-label-sm text-label-sm text-outline dark:text-on-surface-variant uppercase tracking-widest mt-1">
+                                    Acres Habitat</div>
+                            </div>
+                        </div>
+                        <button
+                            class="px-6 py-3 border border-inverse-primary dark:border-primary text-inverse-primary dark:text-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-inverse-primary/10 dark:hover:bg-primary/10 transition-colors duration-300">
+                            Read Impact Report
+                        </button>
+                    </div>
+                    <div class="md:col-span-7 mt-12 md:mt-0 relative fade-up">
+                        <!-- Video Player Frame -->
+                        <div
+                            class="relative rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest border border-outline/20 group cursor-pointer aspect-video flex items-center justify-center">
+                            <div
+                                class="absolute inset-0 z-10 bg-black/20 group-hover:bg-black/40 transition-colors duration-500">
+                            </div>
+                            <img alt="Lush wildflower meadow at golden hour with several wooden beehives dotting the landscape, pristine natural sanctuary, cinematic warm lighting."
+                                class="absolute inset-0 w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2gvOxMs2TGE_0NvAVlC3pA4lghfoJj0EGB86mJPe-gcld-TyCJN-qyVM9AjFmjh7eXzE4zpGjPn3Vdmvy1JCAD6yBf09xt1g8qiORQXSF9AWlKFKTSEGWDEZxkhbBYyTWUESmA0d4CV2xBp3i76YFIf0Efa3rivHUTZdiiB5FpZaR7N8jXCMI3sgrsXtnlDxmnzX90EG6scGvoNccSZ-YlXHM7S_cO8Ar3OxVD1bNnKlfRV7uZuhJhWqPpWvOqajJQ17ZqRoAF3tm" />
+                            <!-- Play Button -->
+                            <div
+                                class="relative z-20 w-20 h-20 bg-surface/80 backdrop-blur-md rounded-full flex items-center justify-center border border-primary/30 group-hover:scale-110 transition-transform duration-500 shadow-honey-glow">
+                                <span class="material-symbols-outlined text-primary text-4xl ml-2">play_arrow</span>
+                            </div>
+                        </div>
+                        <!-- Decorative element -->
+                        <div
+                            class="absolute -bottom-8 -right-8 w-64 h-64 border border-inverse-primary/10 dark:border-primary/10 rounded-full z-0 -z-10 blur-md hidden md:block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer (Shared Component) -->
+    <footer
+        class="bg-inverse-surface dark:bg-surface-container-lowest full-width pt-[128px] pb-margin-desktop shadow-none">
+        <div
+            class="grid grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+            <div class="col-span-12 md:col-span-4 mb-12 md:mb-0">
+                <div class="font-headline-lg text-headline-lg text-primary-fixed-dim mb-6">
+                    Manchester Meadows Honey Company
+                </div>
+                <p class="font-body-md text-body-md text-surface-variant/70 mb-8 max-w-xs">
+                    Curators of exquisite artisanal honey, sustainably sourced and meticulously crafted.
+                </p>
+                <div class="font-body-md text-body-md text-surface-variant/70">
+                    © 2024 Manchester Meadows Honey Company. All rights reserved.
+                </div>
+            </div>
+            <div class="col-span-6 md:col-span-2 md:col-start-7">
+                <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed mb-6">Company</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-body-md text-body-md text-primary-fixed font-bold hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Sustainability</a></li>
+                    <li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-primary-fixed hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Wholesale</a></li>
+                    <li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-primary-fixed hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="col-span-6 md:col-span-2">
+                <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed mb-6">Support</h4>
+                <ul class="space-y-4">
+                    <li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-primary-fixed hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Shipping</a></li>
+                    <li><a class="font-body-md text-body-md text-surface-variant/70 hover:text-primary-fixed hover:translate-x-1 transition-transform duration-300 block focus-within:ring-1 focus-within:ring-primary-fixed"
+                            href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-span-12 md:col-span-2">
+                <h4 class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed mb-6">Social</h4>
+                <div class="flex gap-4">
+                    <a class="text-surface-variant/70 hover:text-primary-fixed transition-colors" href="#"><span
+                            class="material-symbols-outlined">public</span></a>
+                    <a class="text-surface-variant/70 hover:text-primary-fixed transition-colors" href="#"><span
+                            class="material-symbols-outlined">share</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Intersection Observer for fade-up animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-up');
+            fadeElements.forEach(el => observer.observe(el));
+
+            // Navbar scroll effect
+            const nav = document.getElementById('main-nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('shadow-md');
+                } else {
+                    nav.classList.remove('shadow-md');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
